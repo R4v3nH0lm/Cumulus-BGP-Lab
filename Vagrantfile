@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
     end
     bgp_route_gen.vm.hostname = "bgp-route-gen"
-    bgp_route_gen.vm.network "private_network", virtualbox__intnet: "swp1", ip: "10.0.0.1"
+    bgp_route_gen.vm.network "private_network", virtualbox__intnet: "swp1", ip: "192.168.0.1/30"
     # bgp_route_gen.vm.network "private_network", virtualbox__intnet: "swp2"
     # bgp_route_gen.vm.network "private_network", virtualbox__intnet: "swp3"
     # bgp_route_gen.vm.network "private_network", virtualbox__intnet: "swp4"
@@ -17,6 +17,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "cumulus_ce" do |cumulus_ce|
     cumulus_ce.vm.box = "cumuluscommunity/cumulus-vx"
+    cumulus_ce.vm.synced_folder ".", "/vagrant", disabled: true
+    cumulus_ce.vbguest.auto_update = false
     cumulus_ce.vm.provider :virtualbox do |vb|
       vb.name = "cumulus_ce"
       vb.customize ["modifyvm", :id, "--memory", "512"]
@@ -24,7 +26,7 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
     end
     cumulus_ce.vm.hostname = "cumulus-ce"
-    cumulus_ce.vm.network "private_network", virtualbox__intnet: "swp1", ip: "10.0.0.2"
+    cumulus_ce.vm.network "private_network", virtualbox__intnet: "swp1", ip: "192.168.0.2/30"
     # cumulus_ce.vm.network "private_network", virtualbox__intnet: "swp2"
     # cumulus_ce.vm.network "private_network", virtualbox__intnet: "swp3"
     # cumulus_ce.vm.network "private_network", virtualbox__intnet: "swp4"
