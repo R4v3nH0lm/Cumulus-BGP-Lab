@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define "cumulus_ce" do |cumulus_ce|
-    cumulus_ce.vm.box = "cumulus-linux-3.1.1"
+    cumulus_ce.vm.box = "cumuluscommunity/cumulus-vx"
     cumulus_ce.vm.provider :virtualbox do |vb|
       vb.name = "cumulus_ce"
       vb.customize ["modifyvm", :id, "--memory", "512"]
