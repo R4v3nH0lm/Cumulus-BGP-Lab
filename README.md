@@ -18,9 +18,14 @@ Coming soon.
 ## Usage
 
 ### In terminal
-1. Set the env var GRAFANA_API_KEY with
+1. Clone the repo.
 ```bash
-export GRAFANA_API_KEY=yourApiKey
+git clone https://github.com/R4v3nH0lm/Cumulus-BGP-Lab.git
+```
+
+2. Bring up the lab.
+```bash
+vagrant up.
 ```
 
 
