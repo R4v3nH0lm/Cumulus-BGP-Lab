@@ -2,8 +2,7 @@
 Lab to play with running BGP on Cumulus.
 
 ## Design/Topology
-
-Coming soon.
+![arch](/docs/imgs/Cumulus-BGP-Lab_topology.png "Lab Topology")
 
 ## Requirements
 1. VirtualBox (https://www.virtualbox.org/wiki/Downloads)
@@ -23,7 +22,6 @@ git clone https://github.com/R4v3nH0lm/Cumulus-BGP-Lab.git
 ```bash
 vagrant up.
 ```
-
 
 ## To-Do
 * Create dot file to update topology with.
