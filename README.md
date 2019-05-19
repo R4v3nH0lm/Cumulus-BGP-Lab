@@ -25,4 +25,4 @@ vagrant up
 ```
 
 ## To-Do
-* Create dot file to update topology with.
+* ~~Create dot file to update topology with.~~
