@@ -19,9 +19,9 @@ git clone https://github.com/R4v3nH0lm/Cumulus-BGP-Lab.git
 
 ### Bring up base lab
 #### In terminal
-1. Bring up the lab.
+1. Start the virtual machines.
 ```bash
-vagrant up.
+vagrant up
 ```
 
 ## To-Do

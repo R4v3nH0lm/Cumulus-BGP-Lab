@@ -1,3 +1,6 @@
 [submodule "topology_converter"]
 	path = topology_converter
 	url = https://github.com/CumulusNetworks/topology_converter.git
+[submodule "networking-icons"]
+	path = networking-icons
+	url = https://github.com/network-automation/networking-icons.git

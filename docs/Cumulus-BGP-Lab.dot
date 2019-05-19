@@ -1,0 +1,9 @@
+digraph dc1 {
+	// rankdir="LR"
+	node [shape=box]; leaf1; leaf2;
+    subgraph cluster_0 {
+        label="dc1";
+		leaf1 -> leaf2 [headlabel="swp1", label="192.168.1.0/32", taillabel="swp1", dir=none];
+		leaf1 -> leaf2 [headlabel="swp2", label="192.168.2.0/32", taillabel="swp2", dir=none];
+    }
+}
