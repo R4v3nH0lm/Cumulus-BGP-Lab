@@ -17,7 +17,8 @@ git clone https://github.com/R4v3nH0lm/Cumulus-BGP-Lab.git
 
 ## Usage
 
-### In terminal
+### Bring up base lab
+#### In terminal
 1. Bring up the lab.
 ```bash
 vagrant up.
